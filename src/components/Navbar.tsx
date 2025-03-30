@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-sm z-50 py-4 px-6 border-b border-gray-200">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="font-bold text-xl text-sketch-blue">
+          <Link to="/" className="font-bold text-xl text-sketch-blue">
             SketchyDraw
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -23,12 +24,12 @@ const Navbar = () => {
           <a href="#examples" className="text-sketch-gray hover:text-sketch-blue transition-colors">
             Examples
           </a>
-          <a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">
+          <Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">
             Docs
-          </a>
-          <a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">
+          </Link>
+          <Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">
             About
-          </a>
+          </Link>
           <Button variant="outline" className="border-sketch-blue text-sketch-blue hover:bg-sketch-blue hover:text-white transition-colors">
             Try it now
           </Button>
@@ -55,12 +56,12 @@ const Navbar = () => {
           <a href="#examples" className="text-sketch-gray hover:text-sketch-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
             Examples
           </a>
-          <a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
             Docs
-          </a>
-          <a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
             About
-          </a>
+          </Link>
           <Button variant="outline" className="border-sketch-blue text-sketch-blue hover:bg-sketch-blue hover:text-white transition-colors w-full">
             Try it now
           </Button>

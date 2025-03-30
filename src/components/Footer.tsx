@@ -1,5 +1,6 @@
 
 import { Github, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,30 +31,30 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-sm uppercase text-sketch-gray tracking-wider mb-4">Product</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Features</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Templates</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Integrations</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Pricing</a></li>
+              <li><a href="#features" className="text-sketch-gray hover:text-sketch-blue transition-colors">Features</a></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Templates</Link></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Integrations</Link></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Pricing</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold text-sm uppercase text-sketch-gray tracking-wider mb-4">Resources</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Documentation</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Tutorials</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Blog</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Community</a></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Documentation</Link></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Tutorials</Link></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Blog</Link></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Community</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold text-sm uppercase text-sketch-gray tracking-wider mb-4">Company</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">About</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Careers</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Contact</a></li>
-              <li><a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors">Legal</a></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">About</Link></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Careers</Link></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Contact</Link></li>
+              <li><Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors">Legal</Link></li>
             </ul>
           </div>
         </div>
@@ -63,15 +64,15 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} SketchyDraw. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors text-sm">
+            <Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors text-sm">
               Privacy Policy
-            </a>
-            <a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors text-sm">
+            </Link>
+            <Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors text-sm">
               Terms of Service
-            </a>
-            <a href="#" className="text-sketch-gray hover:text-sketch-blue transition-colors text-sm">
+            </Link>
+            <Link to="/" className="text-sketch-gray hover:text-sketch-blue transition-colors text-sm">
               Cookie Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -2,7 +2,13 @@
 import { ArrowRight, Share2, Users, Zap, Layout, PenTool, Cloud } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-const FeatureCard = ({ icon, title, description }) => {
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
   return (
     <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full">
       <CardHeader className="pb-2">
